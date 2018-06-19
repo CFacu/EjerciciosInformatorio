@@ -12,6 +12,9 @@ class Celular(Telefono,Camara,ReproductorMp3):
 	def filmar(self):
 		print("filmando")
 
+	def ver_bateria(self):
+		print('Batería actual: ',self.__bateria,'%')
+
 	def cargar_bateria(self):
 		while self.__bateria < 100:
 			self.__bateria += 10
